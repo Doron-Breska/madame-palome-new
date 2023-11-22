@@ -15,7 +15,7 @@ export default function Home() {
     [];
 
   return (
-    <div>
+    <div style={{ background: "green" }}>
       <h1>products</h1>
       {productsInfo.length > 0 &&
         productsInfo.map((item: any) => {
