@@ -144,3 +144,7 @@ cursor: pointer;
 #footer{
   background-color:rgb(243, 238, 229) ;
 }
+.about{
+  max-width: 1200px;
+  margin: 2rem auto;
+}
