@@ -1,7 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&display=swap');
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -16,12 +18,129 @@
   }
 }
 
+
+
 body {
-  color: rgb(var(--foreground-rgb));
+  font-family: 'Barlow Condensed', sans-serif;
+  /* color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
       transparent,
       rgb(var(--background-end-rgb))
     )
-    rgb(var(--background-start-rgb));
+    rgb(var(--background-start-rgb)); */
+
+  background-color: rgb(25, 25, 25);
+  background-color: white;
+  color:#62554a;
+
+}
+.media-scroller{
+display: grid;
+gap: 2rem;
+grid-auto-flow: column;
+grid-auto-columns: 29%;
+overflow-x: auto;
+overscroll-behavior-inline: contain;
+padding: 0 2rem 3rem;
+/* border-bottom: 1px solid #00000026; */
+}
+
+.media-scroller:nth-of-type(1){
+border-bottom: 1px solid #00000026;
+}
+
+.media-element{
+  /* padding: 0.5rem; */
+  /* background-color: rgb(97, 94, 94);  */
+   display: grid;
+  gap: 0.5rem;
+  grid-template-rows: min-content;
+}
+
+.media-element > img {
+
+  inline-size: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  /* border-radius: 5px; */
+}
+
+@media screen and (max-width: 900px) {
+.media-scroller {
+    display: grid;
+    gap: 1.3rem;
+    grid-auto-flow: column;
+    grid-auto-columns: 42%;
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    padding: 0 1.3rem 3rem;
+  }
+    .media-element {
+      display: grid;
+      gap:0;
+      grid-template-rows: min-content;
+    }
+        .media-element>img {
+    margin-bottom: 0.7rem;
+        }
+}
+
+
+@media screen and (max-width: 700px) {
+  .media-scroller {
+    display: grid;
+    gap: 1rem;
+    grid-auto-flow: column;
+    grid-auto-columns: 55%;
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    padding: 0 1rem 2rem;
+  }
+
+  .media-element {
+    display: grid;
+    gap: 0;
+    grid-template-rows: min-content;
+  }
+
+  .media-element>img {
+    margin-bottom: 0.7rem;
+  }
+}
+
+
+.logo{
+  width: 290px;
+  margin: 1rem auto;
+}
+
+
+.nav-bar {
+padding-block: 1rem;
+}
+
+/* Apply hover effect to all nav-bar links except the 'Contact' link */
+.nav-bar a:not(.contact-link):hover {
+  text-decoration: underline;
+}
+.contact-link{
+cursor: pointer;
+}
+/* Styles specifically for the 'Contact' link */
+.contact-link:focus,
+.contact-link:active {
+  text-decoration: underline;
+}
+
+@media (hover: none) {
+
+  /* On touch devices, ensure underline only shows during tap */
+  .contact-link:focus,
+  .contact-link:active {
+    text-decoration: underline;
+  }
+}
+#footer{
+  background-color:rgb(243, 238, 229) ;
 }

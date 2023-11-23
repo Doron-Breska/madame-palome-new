@@ -1,26 +1,80 @@
+// pages/index.js
+import connectMongoDB from "/Users/doronbrsqh/madame-palome-new/lib/mongoose";
+import Product from "/Users/doronbrsqh/madame-palome-new/models/product";
 import Image from "next/image";
-import { Inter } from "next/font/google";
-import { useEffect, useState } from "react";
-// import { json } from "stream/consumers";
-
-const inter = Inter({ subsets: ["latin"] });
-
-export default function Home() {
-  const [productsInfo, setProductsInfo] = useState([]);
-  useEffect(() => {
-    fetch("/api/products")
-      .then((response) => response.json())
-      .then((json) => setProductsInfo(json));
-  }),
-    [];
-
+export default function Home({ productsInfo }: any) {
   return (
     <div>
-      <h1>products</h1>
-      {productsInfo.length > 0 &&
-        productsInfo.map((item: any) => {
-          return <div key={item._id}>{item.name}</div>;
-        })}
+      <h2 className="text-center my-10  text-3xl tracking-wider md:font-semibold ">
+        OUR COLLECTION
+      </h2>
+      <div className="media-scroller">
+        {productsInfo
+          .filter((item: any) => {
+            return item.weekend !== true;
+          })
+          .map((product: any) => (
+            <div key={product.id} className="media-element text-center">
+              <img src={product.img} alt="product-pic" />
+              <p className="font-bold tracking-wide">{product.name}</p>
+              <p>{product.description}</p>
+              <p>{product.ingredients}</p>
+              <p>{product.price}</p>
+              {product.allergies && (
+                <p className="text-sm italic">*{product.allergies}</p>
+              )}
+            </div>
+          ))}
+      </div>
+
+      <h2 className="text-center my-10  text-3xl tracking-wider md:font-semibold ">
+        WEEK-END SPECIALS
+      </h2>
+      <div className="media-scroller">
+        {productsInfo
+          .filter((item: any) => {
+            return item.weekend === true;
+          })
+          .map((product: any) => (
+            <div key={product.id} className="media-element text-center">
+              <img src={product.img} alt="product-pic" />
+              <p className="font-bold tracking-wide">{product.name}</p>
+              <p>{product.description}</p>
+              <p>{product.ingredients}</p>
+              <p>{product.price}</p>
+              {product.allergies && (
+                <p className="text-sm italic">*{product.allergies}</p>
+              )}
+            </div>
+          ))}
+      </div>
     </div>
   );
+}
+
+export async function getStaticProps() {
+  await connectMongoDB();
+
+  const products = await Product.find({}); // Adjust query as needed
+  console.log(products); // Debug: Inspect the actual data
+
+  const productsInfo = products.map((doc) => ({
+    id: doc._id.toString(), // Make sure this matches with your component
+    name: doc.name.toUpperCase(),
+    description: doc.description,
+    ingridients: doc.ingridients,
+    allergies: doc.allergies || "",
+    price: doc.price,
+    img: doc.img,
+    weekend: doc.weekend,
+  }));
+
+  console.log(productsInfo); // Debug: Inspect the transformed data
+
+  return {
+    props: {
+      productsInfo,
+    },
+    revalidate: 86000, // seconds
+  };
 }
