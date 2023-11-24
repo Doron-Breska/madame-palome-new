@@ -1,8 +1,8 @@
 export default function Home() {
   return (
-    <div className="flex flex-row px-4 gap-14 about">
-      <div className="w-2/5">
-        <p className="text-2xl md:font-semibold tracking-wide mb-10">
+    <div className="flex flex-col md:flex-row px-4 gap-14 about items-center">
+      <div className="w-full md:w-1/2">
+        <p className="text-2xl font-semibold tracking-wide mb-10">
           MADAME PALOMA IS THE FIRST BUSINESS VENTURE OF EREZ PINTOK & HILLA
           SASSON. EREZ, OUR CHEF, HAILS FROM ISRAEL&#39;S GALILEE SEA REGION,
           BORN INTO A FAMILY OF CHEFS WITHIN A DIVERSE CULTURAL MIX OF EAST AND
@@ -25,7 +25,7 @@ export default function Home() {
       <img
         src="https://res.cloudinary.com/danq3q4qv/image/upload/v1699313211/imgs/u3mimw4p863pa3l8yhcl.jpg"
         alt="pic of Hilla and Erez"
-        className="w-3/5 mb-10"
+        className="w-full md:w-1/2 mb-10 self-start"
       />
     </div>
   );
