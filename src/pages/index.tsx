@@ -19,7 +19,7 @@ export default function Home({ productsInfo }: any) {
               <p className="font-bold tracking-wide">{product.name}</p>
               <p>{product.description}</p>
               <p>{product.ingredients}</p>
-              <p>{product.price}</p>
+              {/* <p>{product.price}</p> */}
               {product.allergies && (
                 <p className="text-sm italic">*{product.allergies}</p>
               )}
@@ -28,7 +28,7 @@ export default function Home({ productsInfo }: any) {
       </div>
 
       <h2 className="text-center my-10  text-3xl tracking-wider md:font-semibold ">
-        WEEK-END SPECIALS
+        WEEKEND SPECIALS
       </h2>
       <div className="media-scroller">
         {productsInfo
@@ -41,7 +41,7 @@ export default function Home({ productsInfo }: any) {
               <p className="font-bold tracking-wide">{product.name}</p>
               <p>{product.description}</p>
               <p>{product.ingredients}</p>
-              <p>{product.price}</p>
+              {/* <p>{product.price}</p> */}
               {product.allergies && (
                 <p className="text-sm italic">*{product.allergies}</p>
               )}

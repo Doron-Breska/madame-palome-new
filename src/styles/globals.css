@@ -33,6 +33,7 @@ body {
   background-color: rgb(25, 25, 25);
   background-color: white;
   color:#62554a;
+  color: black;
 
 }
 .media-scroller{
@@ -112,7 +113,8 @@ border-bottom: 1px solid #00000026;
 
 
 .logo{
-  width: 290px;
+  width: 40%;
+  min-width: 300px;
   margin: 1rem auto;
 }
 
