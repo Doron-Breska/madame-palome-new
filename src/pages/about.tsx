@@ -2,7 +2,7 @@ export default function Home() {
   return (
     <div className="flex flex-col md:flex-row px-4 gap-4 md:gap-14 about items-start">
       <div className="w-full md:w-1/2">
-        <p className="text-2xl font-semibold tracking-wide mb-4 md:mb-10">
+        <p className="text-xl font-semibold tracking-wide mb-4 md:mb-10 text-justify">
           MADAME PALOMA OPENED ITS DOORS IN SEPTEMBER 2022. AS A BAKEHOUSE, WE
           SPECIALIZE IN VIENNOISERIES, OFFERING AN ARRAY OF SWEET AND SAVORY
           PREMIUM PASTRIES. EACH CREATION IS CRAFTED FROM REAL FRENCH FLOUR,
@@ -10,7 +10,7 @@ export default function Home() {
           TANTALIZE THE TASTE BUDS BUT ALSO TELL A STORY OF CULINARY EXPERTISE
           AND PASSION.
         </p>
-        <p className="text-lg tracking-wide mb-4 md:mb-10">
+        <p className="text-lg tracking-wide mb-4 md:mb-10 text-justify">
           Madame Paloma is the first business venture of Erez Pintok & Hilla
           Sasson. Erez, our chef, hails from Israel&#39;s Galilee Sea region,
           born into a family of chefs within a diverse cultural mix of East and

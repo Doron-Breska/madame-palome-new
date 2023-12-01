@@ -16,8 +16,8 @@ const NavBar = () => {
   return (
     <>
       <img
-        className="logo"
-        src="https://res.cloudinary.com/danq3q4qv/image/upload/v1700762705/Madame%20Paloma/logo_n0yqfy_tperr9.jpg"
+        className="logo md:w-1/3 w-1/2"
+        src="https://res.cloudinary.com/danq3q4qv/image/upload/v1701376294/Madame_Paloma_hilla_n_erez_960x500ai_copy_2-2_copy_m7ldcd.jpg"
         alt="logo"
       />
       <div className="text-center nav-bar tracking-wide">
