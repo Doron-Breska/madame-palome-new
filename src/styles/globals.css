@@ -82,25 +82,6 @@ grid-template-columns: 1fr 1fr ;
 }
 
 
-@media screen and (max-width: 700px) {
-  .media-scroller {
-    display: grid;
-    gap: 1rem;
-    padding:  2rem 1rem;
-  }
-
-  .media-element {
-    display: grid;
-    gap: 0;
-    grid-template-rows: min-content;
-  }
-
-  .media-element>img {
-    margin-bottom: 0.7rem;
-  }
-}
-
-
 .logo{
   margin: 1rem auto;
 }
@@ -137,4 +118,75 @@ cursor: pointer;
 .about{
   max-width: 1200px;
   margin: 4rem auto;
+}
+
+
+.splash1{
+  width: 18vw;
+  position: absolute;
+  left: 83vw;
+  top: 0;
+  z-index: -1;
+}
+
+.splash2{
+  width: 25vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+
+}
+
+.splash3{
+    width: 15vw;
+      position: absolute;
+      left: 68vw;
+      top: 10rem;
+      z-index: -1;
+}
+
+@media screen and (max-width: 700px) {
+  .media-scroller {
+    display: grid;
+    gap: 1rem;
+    padding:  2rem 1rem;
+  }
+
+  .media-element {
+    display: grid;
+    gap: 0;
+    grid-template-rows: min-content;
+  }
+
+  .media-element>img {
+    margin-bottom: 0.7rem;
+  }
+    .splash3 {
+      width: 20vw;
+      position: absolute;
+      left: 75vw;
+      top: 10rem;
+      z-index: -1;
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+
+  .splash3 {
+    width: 20vw;
+    position: absolute;
+    left: 80vw;
+    top: 13rem;
+    z-index: -1;
+  }
+
+    .splash1 {
+      width: 25vw;
+      position: absolute;
+      left: 74vw;
+      top: 0;
+      z-index: -1;
+    }
 }

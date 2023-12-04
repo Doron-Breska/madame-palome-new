@@ -26,7 +26,6 @@ export default function Home({ productsInfo }: any) {
             </div>
           ))}
       </div>
-
       <h2 className="text-center my-10  text-3xl tracking-wider md:font-semibold ">
         WEEKEND SPECIALS
       </h2>

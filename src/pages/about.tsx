@@ -1,6 +1,6 @@
 export default function Home() {
   return (
-    <div className="flex flex-col md:flex-row px-4 gap-4 md:gap-14 about items-start">
+    <div className="flex flex-col md:flex-row px-4 gap-4 md:gap-14 about items-start ">
       <div className="w-full md:w-1/2">
         <p className="text-xl font-semibold tracking-wide mb-4 md:mb-10 text-justify">
           MADAME PALOMA OPENED ITS DOORS IN SEPTEMBER 2022. AS A BAKEHOUSE, WE

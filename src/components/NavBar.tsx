@@ -15,6 +15,18 @@ const NavBar = () => {
 
   return (
     <>
+      <img className="splash1" src="/red.png" alt="splash of color - red" />
+      <img
+        className="splash2"
+        src="/Turquoise.png"
+        alt="splash of color - black"
+      />
+      <img
+        className="splash3"
+        src="/orange.png"
+        alt="splash of color - orange"
+      />
+
       <img
         className="logo md:w-1/3 w-1/2"
         src="https://res.cloudinary.com/danq3q4qv/image/upload/v1701376294/Madame_Paloma_hilla_n_erez_960x500ai_copy_2-2_copy_m7ldcd.jpg"
