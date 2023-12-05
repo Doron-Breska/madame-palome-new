@@ -15,17 +15,23 @@ const NavBar = () => {
 
   return (
     <>
-      <img className="splash1" src="/red.png" alt="splash of color - red" />
+      <img className="red" src="/red.png" alt="splash of color - red" />
       <img
-        className="splash2"
+        className="Turquoise"
         src="/Turquoise.png"
-        alt="splash of color - black"
+        alt="splash of color - Turquoise"
       />
       <img
-        className="splash3"
-        src="/orange.png"
-        alt="splash of color - orange"
+        className="Turquoise2"
+        src="/Turquoise2.png"
+        alt="splash of color - Turquoise2"
       />
+      <img
+        className="yellow"
+        src="/yellow.png"
+        alt="splash of color - yellow"
+      />
+      <img className="green" src="/green.png" alt="splash of color - green" />
 
       <img
         className="logo md:w-1/3 w-1/2"
