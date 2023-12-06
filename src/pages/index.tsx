@@ -1,8 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
 // pages/index.js
 
-import connectMongoDB from "../lib/mongoose";
-import Product from "../models/Product";
+import connectMongoDB from "../../../madame-palome/src/lib/mongoose";
+import Product from "../../../madame-palome/src/models/Product";
 
 export default function Home({ productsInfo }: any) {
   return (
