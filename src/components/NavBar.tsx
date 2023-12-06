@@ -59,7 +59,12 @@ const NavBar = () => {
         >
           ABOUT AS
         </Link>
-        <a onClick={scrollToFooter} className="contact-link mx-5">
+        <a
+          onClick={() => {
+            scrollToFooter();
+          }}
+          className="contact-link mx-5"
+        >
           CONTACT
         </a>
       </div>
