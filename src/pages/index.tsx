@@ -1,7 +1,7 @@
+/* eslint-disable @next/next/no-img-element */
 // pages/index.js
-import connectMongoDB from "/Users/doronbrsqh/madame-palome-new/lib/mongoose";
-import Product from "/Users/doronbrsqh/madame-palome-new/models/product";
-import Image from "next/image";
+import connectMongoDB from "/Users/doronbrsqh/madame-palome/lib/mongoose";
+import Product from "/Users/doronbrsqh/madame-palome/models/Product";
 export default function Home({ productsInfo }: any) {
   return (
     <div className="M-D-S">

@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
 import router, { useRouter } from "next/router";
 import React from "react";
@@ -12,6 +13,7 @@ const NavBar = () => {
       console.error("Footer element not found");
     }
   };
+  // eslint-disable-next-line @next/next/no-img-element
 
   return (
     <>
