@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 export default function Home() {
   return (
     <div className="flex flex-col md:flex-row px-4 gap-4 md:gap-14 about items-start ">

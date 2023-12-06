@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -9,10 +10,11 @@ import {
   faMapLocationDot,
   faEnvelope,
   faPhone,
-  faHeadset,
 } from "@fortawesome/free-solid-svg-icons";
 
 const Footer = () => {
+  // eslint-disable-next-line @next/next/no-img-element
+
   return (
     <div id="footer" className="pb-10 pt-5">
       <img
