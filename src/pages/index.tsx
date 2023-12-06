@@ -3,6 +3,7 @@
 
 import connectMongoDB from "../lib/mongoose";
 import Product from "../models/Product";
+
 export default function Home({ productsInfo }: any) {
   return (
     <div className="M-D-S">
