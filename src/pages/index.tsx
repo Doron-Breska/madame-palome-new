@@ -1,7 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
 // pages/index.js
-import connectMongoDB from "../lib/mongoose.js";
-import Product from "../models/Product.js";
+
+import connectMongoDB from "@/components/mongoose";
+import Product from "@/components/Product";
 export default function Home({ productsInfo }: any) {
   return (
     <div className="M-D-S">
