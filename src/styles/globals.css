@@ -119,13 +119,31 @@ cursor: pointer;
   max-width: 1200px;
   margin: 4rem auto;
 }
+.M-D-S{
+  position: relative;
+}
+.orange {
+  width: 50vw;
+  position: absolute;
+ bottom: 0;
+ left: 0;
+  z-index: -1;
+  opacity: 0.7;
+}
+.pink{
+    width: 50vw;
+      position: absolute;
+      bottom: 30rem;
+      right: 20vw;
+      z-index: -1;
+      opacity: 0.5;
+}
 
 
 .red{
   width: 40vw;
   position: absolute;
-  /* left: 50vw; */
-  right: -2rem;
+  right: 0;
   top: 2vh;
   z-index: -1;
   opacity: 0.7;
@@ -149,7 +167,7 @@ cursor: pointer;
       opacity: 0.8;
 }
 .yellow {
-  width: 70vw;
+  width: 40vw;
   position: absolute;
   left: ;
   top: 75vh;
@@ -158,10 +176,10 @@ cursor: pointer;
 }
 
 .green {
-  width: 77vw;
+  width: 30vw;
   position: absolute;
 right: 0;
-  top: 115vh;
+  top: 100vh;
   z-index: -1;
   opacity: 0.4;
 }

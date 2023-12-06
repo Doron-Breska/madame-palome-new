@@ -4,7 +4,13 @@ import Product from "/Users/doronbrsqh/madame-palome-new/models/product";
 import Image from "next/image";
 export default function Home({ productsInfo }: any) {
   return (
-    <div>
+    <div className="M-D-S">
+      <img
+        className="orange"
+        src="/orange.png"
+        alt="splash of color - orange"
+      />
+      <img className="pink" src="/pink.png" alt="splash of color - pink" />
       <h2 className="text-center my-10  text-3xl tracking-wider md:font-semibold ">
         OUR COLLECTION
       </h2>
@@ -20,16 +26,21 @@ export default function Home({ productsInfo }: any) {
               <p>{product.description}</p>
               <p>{product.ingredients}</p>
               {/* <p>{product.price}</p> */}
-              {product.allergies && (
+              {/* {product.allergies && (
                 <p className="text-sm italic">*{product.allergies}</p>
-              )}
+              )} */}
             </div>
           ))}
       </div>
       <h2 className="text-center my-10  text-3xl tracking-wider md:font-semibold ">
         WEEKEND SPECIALS
       </h2>
-      <div className="media-scroller">
+      <div className="media-scroller ">
+        {/* <img
+          className="orange"
+          src="/orange.png"
+          alt="splash of color - orange"
+        /> */}
         {productsInfo
           .filter((item: any) => {
             return item.weekend === true;
@@ -41,9 +52,9 @@ export default function Home({ productsInfo }: any) {
               <p>{product.description}</p>
               <p>{product.ingredients}</p>
               {/* <p>{product.price}</p> */}
-              {product.allergies && (
+              {/* {product.allergies && (
                 <p className="text-sm italic">*{product.allergies}</p>
-              )}
+              )} */}
             </div>
           ))}
       </div>
