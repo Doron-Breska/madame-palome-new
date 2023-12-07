@@ -17,6 +17,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/components/mongoose.js", "src/models/Product.js", "src/lib/mongoose.js"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/components/mongoose.js", "src/models/Product.tsx", src/lib/mongoose.tsxs"],
   "exclude": ["node_modules"]
 }
