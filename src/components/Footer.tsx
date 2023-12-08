@@ -46,7 +46,11 @@ const Footer = () => {
                 <FontAwesomeIcon
                   icon={faEnvelope}
                   size="xl"
-                  style={{ color: "#62554a" }}
+                  style={{
+                    color: "#62554a",
+                    width: "1.8rem",
+                    display: "inline",
+                  }}
                   className="mx-3"
                 />
               </a>
@@ -54,7 +58,11 @@ const Footer = () => {
                 <FontAwesomeIcon
                   icon={faPhone}
                   size="xl"
-                  style={{ color: "#62554a" }}
+                  style={{
+                    color: "#62554a",
+                    width: "1.7rem",
+                    display: "inline",
+                  }}
                   className="mx-3"
                 />
               </a>
@@ -68,8 +76,12 @@ const Footer = () => {
             >
               <FontAwesomeIcon
                 icon={faInstagram}
-                size="xl"
-                style={{ color: "#62554a" }}
+                size="sm"
+                style={{
+                  color: "#62554a",
+                  width: "1.9rem",
+                  display: "inline",
+                }}
                 className="mx-3"
               />
             </a>
@@ -82,7 +94,11 @@ const Footer = () => {
               <FontAwesomeIcon
                 icon={faTiktok}
                 size="xl"
-                style={{ color: "#62554a" }}
+                style={{
+                  color: "#62554a",
+                  width: "1.7rem",
+                  display: "inline",
+                }}
                 className="mx-3"
               />
             </a>
@@ -94,7 +110,11 @@ const Footer = () => {
               <FontAwesomeIcon
                 icon={faFacebookF}
                 size="xl"
-                style={{ color: "#62554a" }}
+                style={{
+                  color: "#62554a",
+                  width: "1.2rem",
+                  display: "inline",
+                }}
                 className="mx-3"
               />
             </a>
@@ -106,7 +126,11 @@ const Footer = () => {
               <FontAwesomeIcon
                 icon={faMapLocationDot}
                 size="xl"
-                style={{ color: "#62554a" }}
+                style={{
+                  color: "#62554a",
+                  width: "1.9rem",
+                  display: "inline",
+                }}
                 className="mx-3"
               />
             </a>
