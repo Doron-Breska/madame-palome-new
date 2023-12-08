@@ -10,7 +10,7 @@ export default function Document() {
     <Html lang="en">
       <Head />
       <title>Madame Paloma Bakehouse</title>
-      <link rel="icon" type="image/png" href="icon2.png" />
+      <link rel="icon" type="image/png" href="pistachio.png" />
       <meta
         name="Madame Paloma Bakehouse"
         content="Discover the art of fine baking at Madame Paloma Bakehouse, a specialty bakery renowned for its exquisite brioche, croissants, and a variety of patisserie delights. Our artisanal approach combines traditional methods with innovative flavors, offering an unforgettable culinary experience in every bite."
