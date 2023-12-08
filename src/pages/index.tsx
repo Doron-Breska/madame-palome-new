@@ -67,11 +67,11 @@ export default function Home({ productsInfo }: any) {
 export async function getStaticProps() {
   await connectMongoDB();
 
-  const products = await Product.find({}); // Adjust query as needed
-  console.log(products); // Debug: Inspect the actual data
+  const products = await Product.find({});
+  // console.log(products);
 
   const productsInfo = products.map((doc) => ({
-    id: doc._id.toString(), // Make sure this matches with your component
+    id: doc._id.toString(),
     name: doc.name.toUpperCase(),
     description: doc.description,
     ingridients: doc.ingridients,
@@ -81,7 +81,7 @@ export async function getStaticProps() {
     weekend: doc.weekend,
   }));
 
-  console.log(productsInfo); // Debug: Inspect the transformed data
+  // console.log(productsInfo);
 
   return {
     props: {
