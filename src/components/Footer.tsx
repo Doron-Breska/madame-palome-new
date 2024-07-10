@@ -19,7 +19,7 @@ const Footer = () => {
     <div id="footer" className="pb-10 pt-5">
       <img
         className="mx-auto mb-8"
-        src="https://res.cloudinary.com/danq3q4qv/image/upload/v1701377402/Mad%D7%A7%D7%A8%D7%9E%D7%A9%D7%A0%D7%99%D7%98ame_Paloma_hilla_n_erez_960x500ai_copy_2-2_copy_cmiax1.jpg"
+        src="https://res.cloudinary.com/dbsd2kix0/image/upload/v1720614509/ptrb82w3vlm39wl2qxqi.png"
         alt="logo"
         style={{ width: "300px" }}
       />
